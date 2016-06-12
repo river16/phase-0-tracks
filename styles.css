@@ -1,12 +1,95 @@
-body {background:blue}
+/* body {background:blue} */
+
+h1 {
+  font-size: 2.25em;
+  width: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75em;
+  width: auto;
+  text-align: center;
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a:visited {
+  color: pink;
+  font-weight: bold;
+}
+
+#body-bg {
+  background: #dbf7ff;
+}
+
+/*
+#body-bg-img {
+  background: #dbf7ff url(images/skates-background.png) top left no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+*/
+
+/* make bigger and bold */
+#nav-menu ul {
+  font-size: 1.6em;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+/* page links visited =pink excluding nav */
+#nav-menu ul a:visited {
+  color: orange;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.img-container {
+  display: block;
+  position: relative;
+  border: 3px solid orange;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 60%;
+  text-align: center;
+  padding: 5px;
+}
 
 
-/* <style>
+.centered-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 table, th, td {
-    border: 1px solid black;
-    padding: 10px;
-}
-table {
+    border: 2px solid orange;
+    padding: 20px;
     border-spacing: 5px;
+    text-align: center;
 }
-</style> */
+
+footer {
+  height: 400px;
+  font-family: helvetica;
+}
+
+@media screen and (max-width: 500px) {
+
+  h1 {
+  font-size: 1.5em;
+  }
+
+  h2 {
+  font-size: 1.25em;
+  }
+
+  #nav-menu ul {
+  font-size: 1.25em;
+  }
+}
