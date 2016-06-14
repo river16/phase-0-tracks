@@ -1,0 +1,28 @@
+4.2 
+
+Release 0
+
+Algorithm for using an elevator:
+
+1). Press open for elevator to open. 
+2). Step inside when he doors open
+3). face elevator buttons
+4). Find out what floor is the next destination.
+5). Press on the floor button. 
+6). When the door opens walk outside 
+
+Release 1
+
+Brushing my teeth
+
+0). take out toothbrush and paste
+1). put toothpaste on toothbrush
+2). brush bottom right teeth 
+3). brush bottom left teeth
+4). brush top right teeth
+5). brush top left teeth
+6). brush roof of mouth
+7). brush tongue
+8). spit out toothpaste
+9). rinse
+10). put away toothbrush and paste
