@@ -1,43 +1,34 @@
 
-New Employee Vampire Detecting Interview
+#New Employee Vampire Detecting Interview
 
-What is your name?
-puts "Name is #{name_in_questions}"
-any name = probably human, honestly
+#What is your name?
+puts "What is your name?"
+employee_name = gets.chomp
+puts "Hi, #{employee_name}. Nice to meet you."
 
-How old are you? What year were you born?
-200-900+ years old? definitely a Vampire!
-1-100 human
-100+ = possible vampire, or just really healthy
+#How old are you? 
+puts "How old are you?"
+employee_age = gets.chomp.to_i 
+puts "#{employee_age}"
 
-Our company cafeteria serves garlic bread. Should we order some for you?
-yes = human
-no= possible vampire
-maybe, n/a = possible vampire
+#What year were you born?
+puts "What year were you born?"
+employee_birth_year = gets.chomp.to_i
+1900-2016 = human
+1700-1900 = vampire 
 
-Would you like to enroll in the company's health insurance?
-yes = human
-no = possible vampire
-maybe, n/a = possible vampire
+puts "Our company cafeteria serves garlic bread. Should we order some for you? 
+y/n)"
+y = human
+n= possible vampire
 
----------------------
+#Would you like to enroll in the company's health insurance?
+puts "Would you like to enroll in the company's health insurance? (y/n)"
+y = human
+n = possible vampire
 
-Results:
+#Message at the end:
 
-Probably not a vampire.
-
-Probably a vampire.
-
-Almost certainly a vampire.
-
-Definitely a vampire.
-
-Results inconclusive.
-
-----------------------------
-
-Message at the end:
-
-Actually, never mind! 
+Puts "Actually, never mind! 
 What do these questions have to do with anything? 
-Let's all be friends.
+Let's all be friends."
