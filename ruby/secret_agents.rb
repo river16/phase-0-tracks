@@ -37,9 +37,14 @@ puts decrypt(encrypt("swordfish"))
 
 # Release 5
 
-puts "Good morning Agent. Your mission, should you choose to accept it, involves a password. As always, should you or any of your force be caught or killed, the Secretary will disavow any knowledge of your actions. This message will self-destruct in five seconds. Good luck Agent."
+puts "Good morning Agent. Your mission, should you choose to accept it, 
+involves a password. 
+As always, should you or any of your force be caught or killed, 
+the Secretary will disavow any knowledge of your actions. 
+This message will self-destruct in five seconds. 
+Good luck Agent."
 
-puts "Mission: Would you like to encrypt or decrypt a password? "
+puts "Mission: Would you like to encrypt or decrypt a password?"
 choice = gets.chomp
 
 puts "Enter password: "
@@ -50,7 +55,7 @@ if choice == "encrypt"
 elsif choice == "decrypt"
 	puts "The decryption is: " + decrypt(password)
 else
-
-puts "Mission completed.z"
 	puts "I didn't recognize your choice"
 end
+
+puts "Mission completed."
