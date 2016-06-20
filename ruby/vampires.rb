@@ -23,9 +23,9 @@ y = human
 n= possible vampire
 
 #Would you like to enroll in the company's health insurance?
-puts "Would you like to enroll in the company's health insurance? (y/n)"
-y = human
-n = possible vampire
+puts "Would you like to enroll in the company's health insurance? (yes/no)"
+yes = human
+no = possible vampire
 
 #Message at the end:
 
