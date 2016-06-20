@@ -1,0 +1,93 @@
+4.2 - Elevator Algorithm
+
+Robot rides elevator to go do errands for family
+
+Assumptions:
+Begin standing in front of closed elevator doors
+There is a single call button
+There are identical floor buttons on both sides of the interior of the elevator to both the left and right of the door; otherwise it is known that the floor buttons are on the interior wall to the right of the door
+
+Press call button
+  When doors open
+    To enter the elevator
+      Move forward until wall is reached
+      Stop
+    Turn right 90 degrees
+    Move forward until wall is reached
+      Stop
+    Turn right 90 degrees
+    Move forward until wall is reached
+      Stop
+    Press button 1
+
+    Pause
+
+    Wait until the elevator counts down to floor 1
+
+    When the elevator has arrived on floor 1
+      Move to the right
+        Stop at the center of the front of the elevator
+    When the doors open
+      Move forward to exit the elevator
+
+Go do your errand!
+
+
+Release 1 - Real Life Algorithm
+
+Clean/Wash the glass on the patio door
+
+Assumptions:
+Tools
+  Bucket - hot water with window cleaner
+  Sponge = 5" x 6"
+
+Begin at top left corner of glass
+Until the entire door glass has been washed - until the bottom of the glass, opposite of the top, bottom right, opposite of begin point of rectangle, has been reached.
+
+  Saturate sponge in bucket
+  Press sponge to glass at begin point
+    While continuing to press sponge against the glass
+      Slide/Move sponge to the right along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+      Slide/Move sponge to the left along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+    While continuing to press sponge against the glass
+      Slide/Move sponge down 6 inches
+      stop
+      Slide/Move sponge to the right along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+      Slide/move sponge to the left along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+    Identify this stop point as L2
+    Wring out sponge in bucket
+  Press sponge to glass at L2 position
+  Slide/Move sponge down 6 inches
+    While continuing to press sponge against the glass
+      Slide/Move sponge to the right along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+      Slide/Move sponge to the left along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+    While continuing to press sponge against the glass
+      Slide/Move sponge down 6 inches
+      stop
+      Slide/Move sponge to the right along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+      Slide/move sponge to the left along the glass in a straight line
+        until the edge of the glass is reached
+      stop
+      Identify this stop point as L4 (L2 + 2)
+    Wring out sponge in bucket
+  Press sponge to glass at L4 position
+  Slide/Move sponge down 6 inches
+
+  Continue washing until bottom right corner is reached
+
+  End washing window
