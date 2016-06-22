@@ -1,7 +1,13 @@
-def method(x, y, z)
- create = [x, y, z]
+def build_grocery_list(milk, cheese, bread)
+	return ["milk", "cheese", "bread"]
 end
-p method("bone", "ball", "squeaky bear")
+p ["milk", "cheese", "bread"]
+
+def add_to_array(chips, chocolate)
+	#	"chips".concat(["chocolate"]) 
+	"chips" << "chocolate"
+end
+#answer must be in "chocolate"
 
 grocery_list =[]
 p grocery_list
