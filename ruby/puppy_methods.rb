@@ -54,20 +54,10 @@ felix.meow(3)
 felix.scratch
 
 pound = []
- ctr = 0
+weight = 0
  
- while ctr < 50
+ while weight < 50
    pound << Cat.new
-   ctr += 1
+   weight += 5
  end
- 
  puts pound.length
- 
- pound.each_with_index do |cat, index|
-   pound.scratch
-   pound.scratch
-   pound.meow(5)
-   pound.meow(1)
- end
- 
-
