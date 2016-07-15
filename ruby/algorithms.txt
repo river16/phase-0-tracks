@@ -5,10 +5,10 @@ Release 0
 Algorithm for using an elevator:
 
 1). Press open for elevator to open. 
-2). Step inside when he doors open
+2). Step inside when the doors open
 3). face elevator buttons
 4). Find out what floor is the next destination.
-5). Press on the floor button. 
+5). Press the desired floor’s button. 
 6). When the door opens walk outside 
 
 Release 1
