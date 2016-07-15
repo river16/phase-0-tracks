@@ -1,61 +1,57 @@
-# Define Methods (rules)
+#1). An encrypt method that advances every letter of a string one letter forward. 
+#So "abc" would become "bcd". For now, you can assume lowercase input and output. 
+#Any space character should remain a space character -- no change made.
 
-def encrypt(string)
-	index = 0
-	while index < string.length
-		s = string[index]
-		if s == "z"
-			string[index] = "a"
-		elsif s != " "
-			string[index] = string[index].next
+def encryption(str)
+alf = "abcdefghijklmnopqrstuvwxyz"
+i = 0
+answer = []
+	while i < str.length
+		if str[i] == "z"
+		answer.push("a")
 		end
-		index += 1
+	char = alf.index(str[i])
+	answer.push(alf[char+1])
+	i+=1
 	end
-	return string
+	answer.join
 end
 
-def decrypt(string)
-	index = 0
-	while index < string.length
-		alpha_reverse = "zyxwvutsrqponmlkjihgfedcba"
-		s = string[index]
-		s_location = alpha_reverse.index(s)
-		if s_location != nil
-			t = alpha_reverse[s_location + 1]
-			if s == "a"
-			string[index] = "z"
-			elsif s != " "
-			string[index] = t
-			end
-		end
-		index += 1
+#encryption("hmr")
+
+#2. A decrypt method that reverses the process above.
+
+def decryption(string)
+	alf = "abcdefghijklmnopqrstuvwxyz"
+	i = 0
+	answer = []
+	while i < string.length
+		char = alf.index(string[i])
+		answer.push(alf[char-1])
+		i +=1
 	end
-	return string
+	answer.join
 end
 
-puts decrypt(encrypt("swordfish"))
+#decryption("cdefghijklmnopqrstuvwxyz")
 
-# Release 5
+#decryption(encrypt("swordfish"))
 
-puts "Good morning Agent. Your mission, should you choose to accept it, 
-involves a password. 
-As always, should you or any of your force be caught or killed, 
-the Secretary will disavow any knowledge of your actions. 
-This message will self-destruct in five seconds. 
-Good luck Agent."
+p "Hello Agent Bond, would you like to decrypt or encrypt a password?"
+password_choice = gets.chomp
 
-puts "Mission: Would you like to encrypt or decrypt a password?"
-choice = gets.chomp
+if password_choice = "encrypt"
+	p "What is the secret password?"
+	secret_password = gets.chomp
+	encryption "#{secret_password}" 
+puts "#{encryption(secret_password)}"
 
-puts "Enter password: "
-password = gets.chomp
-
-if choice == "encrypt"
-	puts "The encryption is: " + encrypt(password)
-elsif choice == "decrypt"
-	puts "The decryption is: " + decrypt(password)
+elsif password_choice = "decrypt"
+	p "What is the secret password?"
+	secret_password = gets.chomp
+	decryption "#{secret_password}" 
+	puts "#{decryption(secret_password)}"
 else
-	puts "I didn't recognize your choice"
 end
 
-puts "Mission completed."
+p "Mission completed, good job Secret Agent"
