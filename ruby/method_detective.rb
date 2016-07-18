@@ -40,7 +40,7 @@ a.prepend("the usual ")
 # => 122
 # (What is the significance of the number 122 in relation to the character z?)
 
-In UTF-8, (and Unicode in general), one byte is not always/never = a character but codepoint represents a character - think of ord as codepoints[0], and the number depends on the String's Encoding.
+#In UTF-8, (and Unicode in general), one byte is not always/never = a character but codepoint represents a character - think of ord as codepoints[0], and the number depends on the String's Encoding.
 
 
 a = "How many times does the letter 'a' appear in this string?".count "a"

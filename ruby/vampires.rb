@@ -20,7 +20,7 @@ until nmbr_surveys == nmbr.to_i
       name = gets.chomp
   puts " "
 
-  puts "How old are they?
+  puts "How old are they?"
       age = gets.chomp.to_i
   puts "What year were they born?"
       year = gets.chomp.to_i
@@ -35,7 +35,7 @@ until nmbr_surveys == nmbr.to_i
       garlic_bread = gets.chomp
       if garlic_bread == "yes"
         garlic_bread = true
-      else garlic_bread == "no"
+      else garlic_bread = "no"
         garlic_bread = false
       end
   puts""
@@ -44,7 +44,7 @@ until nmbr_surveys == nmbr.to_i
       insurance = gets.chomp
       if insurance == "yes"
         ins = true
-      else insurance == "no"
+      else insurance = "no"
         ins = false
       end
   puts ""
@@ -67,11 +67,11 @@ until nmbr_surveys == nmbr.to_i
   puts""
 
 
-  if (age == true) && ((g_b == true) || (ins = true))
+  if (age == true) && ((g_b == true) || (ins == true))
     puts "Probably not a vampire"
   elsif (age == false) && ((g_b == false) || (ins == "no"))
     puts "Probably a vampire"
-  elsif (age = false) && (g_b == false) && (ins == false)
+  elsif (age == false) && (g_b == false) && (ins == false)
     puts "Almost certainly a vampire"
   elsif (name == "Drake Cula") || (name == "Tu Fang")
     puts "Definitely a vampire."
@@ -83,4 +83,5 @@ nmbr_surveys += 1
 end
 
 puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+
 
