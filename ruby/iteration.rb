@@ -1,81 +1,80 @@
-def weather
-  clouds = "are orange"
-  rain = "looks like rain."
-  puts "About to run the block."
-  yield(clouds,rain)
-  puts "Ran around the block."
+## 5.3 Mandatory Pairing: Iteration ##
+
+birds = ["Robin", "Crow", "Owl"]
+
+#Print the orignial array
+p birds
+
+birds.each do |bird|
+	puts "I like #{bird}s" 
 end
 
-weather { |clouds, rain| puts "The clouds #{clouds}. I think it #{rain}"}
+p birds
 
-
-car_types = ["mazda", "corvette", "jeep"]
-car_types.each do |cars|
-  puts cars
+birds.map! do |bird|
+	puts "I like #{bird}s"
 end
 
+p birds	
 
-car_types = ["mazda", "corvette", "jeep"]
-puts "Before .map call:"
-p car_types
-car_types.map! do |cars|
-  cars.upcase
+####################
+
+birds = {
+	"robin" => "Red",
+	"crow" => "Black",
+	"owl" => "Gray"
+}
+
+birds.each do |species, color|
+	puts "I think this #{species} is #{color}."
 end
 
-puts "After .map call:"
-p car_types
+####################
+
+## Arrays ##
+numbers = [1, 4, 6, 10]
+numbers.delete_if { |number| number < 5}
+p numbers
+
+numbers = [1, 4, 6, 10]
+numbers.keep_if { |number| number < 5}
+p numbers
 
 
+numbers.select { |number| number > 6}
 
 
-breakfast_club = {:Molly => "Claire", :Ally => "Allison", :Judd => "Bender"}
-breakfast_club.each do |actor, role|
-  puts "#{actor} is #{role}"
-end
+numbers = [1, 4, 6, 10]
+numbers.drop_while { |number| numbers <= 6 }
+p numbers
 
 
+## Hashes ##
 
-breakfast_club = {:Molly => "Claire", :Ally => "Allison", :Judd => "Bender"}
-puts "before:"
-p breakfast_club
-puts "after:"
-p breakfast_club.map {|key, value| key.upcase}
+numbers = {
+	"number1" => 1,
+	"number2" => 3,
+	"number3" => 5,
+	"number4" => 7,
+}
+numbers.delete_if {|key, value| value >= 3}
 
+numbers = {
+	"number1" => 1,
+	"number2" => 3,
+	"number3" => 5,
+	"number4" => 7,
+}
+numbers.keep_if {|key, value| value >= 3}
 
+numbers = {
+	"number1" => 1,
+	"number2" => 3,
+	"number3" => 5,
+	"number4" => 7,
+}
+numbers.select {|k,v| v > 4} 
 
-# RELEASE TWO
-
-#ARRAY
-nmbrs = [1, 2, 3, 4, 5, 6]
-nmbrs.delete_if {|nmbr| nmbr < 5 }
-p nmbrs
-
-
-nmbrs = [1, 2, 3, 4, 5, 6]
-nmbrs.keep_if {|nmbr| nmbr < 5 }
-p nmbrs
-
-
-nmbrs = [1, 2, 3, 4, 5, 6]
-nmbrs.select do |nmbr|
-  nmbr % 2 == 0
-end
-
-
-#HASH
-digits = {:one => 1, :two => 2, :three => 3, :four => 4, :five => 5, :six => 6}
-digits.delete_if {|key, value| value < 3}
-p digits
-
-
-digits = {:one => 1, :two => 2, :three => 3, :four => 4, :five => 5, :six => 6}
-digits.keep_if {|key, value| value < 3}
-p digits
-
-
-digits = {:one => 1, :two => 2, :three => 3, :four => 4, :five => 5, :six => 6}
-digits.select! {|key, value| value % 2 == 0}
-p digits
 
 
 

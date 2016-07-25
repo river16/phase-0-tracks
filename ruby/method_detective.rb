@@ -1,8 +1,8 @@
 # Replace in the "<???>" with the appropriate method (and arguments, if any).
 # Uncomment the calls to catch these methods red-handed.
-
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
+
 
 "iNvEsTiGaTiOn".swapcase
 # => “InVeStIgAtIoN”
@@ -19,6 +19,12 @@
 
 a = "the usual"
 a << " suspects"
+-----
+a = "the usual"
+a += " suspects"
+-----
+b = "the usual" + " suspects"
+-----
 #=> "the usual suspects"
 #Ruby doc: str << obj → str
 
@@ -45,3 +51,5 @@ a.prepend("the usual ")
 
 a = "How many times does the letter 'a' appear in this string?".count "a"
 # => 4
+
+

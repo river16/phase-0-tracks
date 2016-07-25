@@ -1,5 +1,7 @@
+#WORKSHOP TOOL INVENTORY
+
 shop_tools = {
-    Moms_tools: {
+    moms_tools: {
         box: 'blue',
         tools: {
             wrenches: 2,
@@ -10,7 +12,7 @@ shop_tools = {
             "Spacers"
         ]
     },
-    Dads_tools: {
+    dads_tools: {
         box: 'yellow',
         tools: {
             testers: 3,
@@ -21,7 +23,7 @@ shop_tools = {
             "Light switches"
         ]
     },
-    Jrs_tools: {
+    jrs_tools: {
         box: 'blue',
         tools: {
             socket_sets: 4,
@@ -34,19 +36,26 @@ shop_tools = {
 
 
 # ADD ITEMS INTO JRS_TOOLS PARTS
-#shop_tools[:Jrs_tools][:parts].push("supply lines, shut off valves")
+shop_tools[:jrs_tools][:parts].push("supply lines, shut off valves")
 
 => ["supply lines, shut off valves"]
 
 
-#IDENTIFY ITEM 0 IN JRS_TOOLS PARTS
-shop_tools[:Moms_tools][:parts][0]
+#IDENTIFY FIRST ITEM IN MOMS_TOOLS PARTS
+shop_tools[:moms_tools][:parts][0]
 
 => "Axles"
 
 
-#WHAT ARE MOMS_TOOLS
-shop_tools[:Dads_tools][:tools]
+#WHAT ARE DAD_TOOLS
+shop_tools[:dads_tools][:tools]
 
 => {:testers=>3, :snippers=>2}
+
+#REVERSE DADS TOOLS PARTS
+shop_tools[:dads_tools][:parts].reverse
+
+=> ["Light switches", "Junction boxes"]
+
+
 
