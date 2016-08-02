@@ -40,7 +40,3 @@ vendor_call = Food_Vender.new
 vendor_call.yell_vendor("HOTDOGS")
 
 
-
-
-
-
